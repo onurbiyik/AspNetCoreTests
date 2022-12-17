@@ -7,7 +7,7 @@ namespace AspNetCoreTests.IntegrationTests
     [Collection("Sequential")]
     public class HomeControllerTests : TestBase
     {
-        public HomeControllerTests(TestApplicationFactory<Startup, FakeStartup> factory) : base(factory)
+        public HomeControllerTests(TestApplicationFactory<FakeStartup> factory) : base(factory)
         {
         }
 

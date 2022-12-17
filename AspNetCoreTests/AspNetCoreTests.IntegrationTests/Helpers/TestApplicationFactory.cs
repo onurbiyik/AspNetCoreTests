@@ -6,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace AspNetCoreTests.IntegrationTests
 {
-    public class TestApplicationFactory<TStartup, TTestStartup> : WebApplicationFactory<TTestStartup> where TTestStartup : class
+    public class TestApplicationFactory<TTestStartup> : WebApplicationFactory<TTestStartup> where TTestStartup : class
     {
         protected override IHostBuilder CreateHostBuilder()
         {
